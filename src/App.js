@@ -8,6 +8,7 @@ import {Route, Switch} from 'react-router-dom';
 import Navigation from './views/Navigation';
 import Login from './pages/Login';
 import Registration from './pages/Registration';
+import Footer from './views/Footer';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
   <Route exact path="/sign-up" component={Registration} />
   <Route component={Error} />
   </Switch>
+  <Footer />
   </>
 }
 

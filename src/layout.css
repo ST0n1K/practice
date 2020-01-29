@@ -77,13 +77,16 @@
         width: 95vw;
         max-width: 1170px;
     }
-    #background-video {
-        height: auto;
-    }
   }
   
   @media screen and (min-width: 1200px) {
     .services p {
       width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    #background-video {
+        height: auto;
     }
   }

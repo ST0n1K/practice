@@ -1,0 +1,89 @@
+@media screen and (min-width: 576px) {
+    .banner {
+      padding: 2rem 3rem;
+    }
+    .banner h1 {
+      font-size: 3rem;
+    }
+  }
+
+@media screen and (min-width: 768px) {
+    .nav-btn {
+      display: none;
+    }
+    .nav-center {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+    }
+    .nav-links {
+      height: auto;
+      display: flex;
+      margin-left: 4rem;
+    }
+    .nav-links a {
+      margin: 0 1rem;
+      padding: 0.5rem 0;
+    }
+  }
+
+  @media screen and (min-width: 776px) {
+    .featured-rooms-center {
+      width: 90vw;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    }
+    .roomslist-center {
+        width: 90vw;
+    }
+    .filter-form {
+        width: 70vw;
+      }
+  }
+
+  @media screen and (min-width: 992px) {
+    .banner {
+      padding: 2rem 6rem;
+    }
+    .banner h1 {
+      font-size: 4rem;
+    }
+    .services-center {
+        width: 95vw;
+        max-width: 1170px;
+    }
+    .featured-rooms-center {
+        width: 95vw;
+        max-width: 1170px;
+    }
+    .single-room-images,
+    .single-room-info,
+    .room-extras {
+      width: 95vw;
+      max-width: 1170px;
+    }
+    .single-room-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
+    }
+    .info {
+      padding-left: 3rem;
+    }
+    .roomslist-center {
+        width: 95vw;
+        max-width: 1170px;
+    }
+    .filter-form {
+        width: 95vw;
+        max-width: 1170px;
+    }
+    #background-video {
+        height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .services p {
+      width: 100%;
+    }
+  }

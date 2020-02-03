@@ -684,8 +684,8 @@ h6 {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  background-color: var(--mainGrey);
-  margin-top: 5rem;
+  background-color: var(--mainWhite);
+  margin: 2rem 0;
 }
 
 .social img {

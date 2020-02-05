@@ -40,17 +40,6 @@ export default class SingleRoom extends Component {
                 </Banner>
             </StylingHero>
 
-            {/* <div className="slider">
-                <div className="slide" style={{backgroundImage: `url(${images[0]})`}}>
-                </div>
-                <div className="slide" style={{backgroundImage: `url(${images[1]})`}}>
-                </div>
-                <div className="slide" style={{backgroundImage: `url(${images[2]})`}}>
-                </div>
-                <div className="slide" style={{backgroundImage: `url(${images[3]})`}}>
-                </div>
-            </div> */}
-
             <div className="single-room">
                 <div className="">
                     <div className="carousel-wrapper">

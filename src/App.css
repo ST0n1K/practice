@@ -15,7 +15,7 @@
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
-/* globals */
+
 body {
   padding-top: 66px;
   color: var(--mainBlack);
@@ -86,7 +86,7 @@ h6 {
   padding: 1rem;
   letter-spacing: var(--mainSpacing);
 }
-/* end of globals */
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -136,7 +136,6 @@ h6 {
   height: 150px;
 }
 
-/* end of navbar */
 /* Hero */
 .videoBgWrapper {
   position: relative;
@@ -168,8 +167,19 @@ h6 {
   background-image: url("./images/room-2.jpeg");
   min-height: 60vh;
 }
-/* End of Hero */
+
 /* Banner */
+@keyframes banner {
+  0% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 4rem;
+  }
+  100% {
+    margin-bottom: 0;
+  }
+  }
 .banner {
   display: inline-block;
   background: rgba(0, 0, 0, 0.5);
@@ -178,6 +188,9 @@ h6 {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+  animation-name: banner;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
 }
 .banner h1 {
   font-size: 2.5rem;
@@ -193,7 +206,6 @@ h6 {
   margin-bottom: 2rem;
 }
 
-/* End of Banner */
 /* Title */
 .section-title {
   text-align: center;
@@ -211,7 +223,6 @@ h6 {
   margin: 0 auto;
   background: var(--primaryColor);
 }
-/* end of Title */
 
 /* services */
 .services {
@@ -243,7 +254,6 @@ h6 {
   margin: 0 auto;
 }
 
-/*end of services */
 /* featured rooms */
 
 .featured-rooms {
@@ -261,11 +271,27 @@ h6 {
   grid-column-gap: 40px;
 }
 
-/* end pf featured rooms */
 /* room */
+@keyframes room {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .room {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
+  animation-name: room;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
 }
 .room:hover {
   box-shadow: var(--darkShadow);
@@ -324,7 +350,7 @@ h6 {
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
 }
-/* end of room  */
+
 /* single room*/
 
 .single-room {
@@ -385,7 +411,6 @@ h6 {
   grid-row-gap: 1rem;
 }
 
-/* end of single room*/
 /* roomlist */
 .roomslist {
   padding: 5rem 0;
@@ -400,7 +425,6 @@ h6 {
 }
 
 
-/* end of roomlist */
 /*  rooms fitler*/
 .filter-container {
   padding: 5rem 0;
@@ -441,8 +465,6 @@ h6 {
   font-size: 0.8rem;
   margin-left: 0.5rem;
 }
-
-/* end of rooms fitler*/
 
 /* Carousel */
 
@@ -597,6 +619,19 @@ h6 {
  font-family: fontawesome;
  color: #5b5b5b;
 }
+
+.user-tag:before {
+  content: '\f013';
+  font-size: 14px;
+  font-family: fontawesome;
+  color: #5b5b5b;
+ }
+ .user-email:before {
+  content: '\f1fa';
+  font-size: 14px;
+  font-family: fontawesome;
+  color: #5b5b5b;
+ }
 
 .lock:before {
  content: '\f023';

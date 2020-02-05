@@ -5,7 +5,6 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {RoomProvider} from './Context';
-import 'wow.js';
 
 ReactDOM.render(<RoomProvider><Router><App /></Router></RoomProvider>, document.getElementById('root'));
 

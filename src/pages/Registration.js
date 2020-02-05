@@ -8,8 +8,8 @@ export default function Registration() {
                 <div className="login-item">
                     <form action="" className="form form-login">
                         <div className="form-field">
-                            <label className="user" htmlFor="login-username"><span className="hidden">First name</span></label>
-                            <input id="login-username" type="text" className="form-input" placeholder="First name" required />
+                            <label className="user" htmlFor="login-firstname"><span className="hidden">First name</span></label>
+                            <input id="login-firstname" type="text" className="form-input" placeholder="First name" required />
                         </div>
 
                         <div className="form-field">
@@ -18,12 +18,12 @@ export default function Registration() {
                         </div>
 
                         <div className="form-field">
-                            <label className="user" htmlFor="login-username"><span className="hidden">Username</span></label>
+                            <label className="user-tag" htmlFor="login-username"><span className="hidden">Username</span></label>
                             <input id="login-username" type="text" className="form-input" placeholder="Username" required />
                         </div>
 
                         <div className="form-field">
-                            <label className="user" htmlFor="login-email"><span className="hidden">Email</span></label>
+                            <label className="user-email" htmlFor="login-email"><span className="hidden">Email</span></label>
                             <input id="login-email" type="email" className="form-input" placeholder="Email" required />
                         </div>
 

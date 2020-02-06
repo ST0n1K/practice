@@ -570,11 +570,9 @@ h6 {
   align-items: center;
   min-height: 100%;
   height: 93vh;
-  font-family: 'lato', sans-serif;
   color: #fff;
   background: #222222;
   background: #16222A;
-  background: -webkit-linear-gradient(to top, #16222A , #3A6073);
   background: linear-gradient(to top, #16222A , #3A6073);
 }
 
@@ -588,7 +586,6 @@ h6 {
 }
 
 .logo{
- font-family: "museo-slab";  
  font-size:32px;
  text-align: center;
  padding: 20px 20px 0;
@@ -679,9 +676,6 @@ h6 {
  background-color: #197071;
 }
 .form-field {
- display: -webkit-box;
- display: -webkit-flex;
- display: -ms-flexbox;
  display: flex;
  margin-bottom: 2rem;
 }
